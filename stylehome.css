@@ -1,7 +1,13 @@
 html, body{
 	height: 100% ;
 	width : 100% ;
+	//background-image: url(images/rollsabout1.jpg);
 	}
+
+
+.navbar-nav.navbar-right {
+    margin-right: 0;
+}
 
 .navbar{
 
