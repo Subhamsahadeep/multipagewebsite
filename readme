@@ -1,0 +1,5 @@
+Download the whole File.
+Then either you can use Xampp Or normally you can click the various html pages to see the whole website.
+There are basically 3 .html files and 3 .css files.
+All the images are stored in the "images" folder so the paths are given as images/(name of the image) .
+The technologies used here are HTML, CSS, W3CSS, Bootstrap, Javascript.
