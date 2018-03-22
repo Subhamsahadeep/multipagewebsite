@@ -10,10 +10,10 @@
 	<link rel="stylesheet"  href="stylehome.css"/>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body>
+<body id="img" onload = "startTimer()">
 
 
-  <nav class="navbar navbar-default"  id="mainnav">
+  <nav class="navbar navbar-fixed-top navbar-default"  id="mainnav">
   <div class="container-fluid">
     <div class="navbar-header">
     	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,7 +25,7 @@
     </div>
 
 		    <div class="collapse navbar-collapse" id="myNavbar">
-		    <ul class="nav navbar-nav">
+		    <ul class="nav navbar-nav navbar-right">
 		      <li class="active" ><a style="color:#000000;" href="#">Home</a></li>
 		      <li><a href="blog.html">Blog</a></li>
 		      <li><a href="contact.html">Contact Us</a></li>
@@ -98,46 +98,30 @@
 	 </div>
      </div>
 
-</div>
 
 
-<div class="padding3">
+
+
 <div class="row">
 	<div class="container">
 		<div class="col-md-4 col-sm-12 col-xs-12"></div>
 		<div class="col-md-4 col-sm-12 col-sm-12">
-			<img src="images/logo.png" style=" padding-top: 30px; width: 100%">
+			
+	
+			<p><h1><b>Websites.co.in</b></h1> is A SaaS Platform that takes local Small and Medium businesses online within 15 minutes flat, lets them post updates to their website through web, app and sms platforms and helps them rank better for location based searches on Google at an affordable price.</p>
+		
 		</div>
 		<div class="col-md-4 col-sm-12 col-xs-12"></div>
-
-		<!-- <div class="col-md-6 col-sm-12 col-sm-12">
-			<h2> Websites.co.in</h2>
-			<p>Websites.co.in is A SaaS Platform that takes local Small and Medium businesses online within 15 minutes flat, lets them post updates to their website through web, app and sms platforms and helps them rank better for location based searches on Google at an affordable price.</p>
-		</div> -->
 	</div>
 </div>
-</div>
 
-<div class="padding3">
-<div class="row">
-	<div class="container">
-		<div class="col-md-4 col-sm-12 col-xs-12"></div>
-		<div class="col-md-4 col-sm-12 col-sm-12">
-	
-			<p>Websites.co.in is A SaaS Platform that takes local Small and Medium businesses online within 15 minutes flat, lets them post updates to their website through web, app and sms platforms and helps them rank better for location based searches on Google at an affordable price.</p>
-		</div>
-		<div class="col-md-4 col-sm-12 col-xs-12"></div>
-		
-	 </div>
-</div>
-</div>
 
+</div>
 
 <div id="fixed">
 	
 </div>
 
-<hr>
 <div class="padding2">
 	 <div class="container">
 <div class="row">
@@ -145,18 +129,21 @@
 		<img src="images/tourblog.png">
 	</div>
 	<div class="col-md-6 col-sm-12  col-xs-12">
-		<h3><b>Tourism</b></h3>
-		<p>Trying something new, challenging and arduous is the dream of every adventure enthusiast. From trekking, wildlife safari, skiing to hot air ballooning etc., the plethora of adventure activities in India keeps on challenging the daredevils. Navigate from North to South or travel from East to West, you will find countless activities that not only excels</p>
+
+		<div class="w3-panel w3-card w3-cyan"><h3><b>Tourism</b></h3>
+		<p>Trying something new, challenging and arduous is the dream of every adventure enthusiast. From trekking, wildlife safari, skiing to hot air ballooning etc., the plethora of adventure activities in India keeps on challenging the daredevils. Navigate from North to South or travel from East to West, you will find countless activities that not only excels</p></div>
+		
 	</div>
 </div>
 </div>
-<hr>
+
 <div class="container">
 <div class="row">
 	<div class="col-md-6 col-sm-12  col-xs-12">
 		<img src="images/photo.jpg">
 	</div>
 	<div class="col-md-6 col-sm-12  col-xs-12">
+		<div class="w3-panel w3-card w3-sand">
 		<h3><b>Photography</b></h3>
 		<p>Holidays in India do not require a fixed budget, season or interest; all are welcome to this uniquely diverse country. Backpackers, honeymoon couples, families, adventure enthusiasts or one is love with experiences, one always have a number of option of holiday destinations in India.</p>
 	</div>
@@ -169,18 +156,21 @@
 		<img src="images/fit.jpg">
 	</div>
 	<div class="col-md-6 col-sm-12  col-xs-12">
+		<div class="w3-panel w3-card w3-brown">
 		<h3><b>Fitness</b></h3>
 		<p>It doesn't matter whether you balance in tree pose while brushing your teeth or if you're just beginning your yoga practice, YogaDork will welcome you with open arms—er, heart. YogaDork's network of contributors report on all things yoga, from new research to Bikram Choudhury's lawsuit, and offer plenty of easy-to-read infographics and hilarious posts for good measure.</p>
 	</div>
 </div>
 </div>
-<hr>
+
 <div class="container">
 <div class="row">
 	<div class="col-md-6 col-sm-12  col-xs-12">
 		<img src="images/archi.jpg">
 	</div>
 	<div class="col-md-6 col-sm-12  col-xs-12">
+		<div class="w3-panel w3-card w3-lime">
+
 		<h3><b>Architecture</b></h3>
 		<p>The Best Architecture blogs from thousands of top Architecture blogs in our index using search and social metrics. Data will be refreshed once a week. Also check out Top Architecture Youtube Channels list for Top videos on Architecture.
 If your blog is selected in this list, you have the honour of displaying this Badge (Award) on your blog</p>
@@ -208,6 +198,7 @@ function carousel() {
 }
 
 </script>
+
 <script >
 	$(document).ready(function() {
   var navpos = $('#mainnav').offset();
@@ -223,5 +214,21 @@ function carousel() {
 });
 </script>
 
+<script >
+	var images=new Array('images/newbg.jpg','images/newbg2.jpg');
+var nextimage=0;
+doSlideshow();
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('body')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500,function(){
+        setTimeout(doSlideshow,3000);
+    });
+}
+
+
+</script>
 </body>
 </html>
