@@ -1,0 +1,42 @@
+html, body{
+	height: 100% ;
+	width : 100% ;
+
+	}
+
+.navbar{
+
+	background: #000000;
+	padding: 10px 0;
+	
+}
+.navbar-brand img{
+	width: 120px ;
+	height: 80px ;
+	margin-top: -30px;
+}
+
+.navbar-nav{
+float : right ;
+}
+
+.navbar-default .navbar-nav li a{
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav li a:hover{
+	background-color : 	#ADFF2F;
+	color: #000000;
+}
+
+.padding2{
+
+padding: 10PX;
+
+  box-shadow: 10px 10px 8px #888888;
+
+}
+.padding img{
+	padding-top: 10px;
+}
+

@@ -1,0 +1,67 @@
+html, body{
+	height: 100% ;
+	width : 100% ;
+	 
+	}
+	
+.jumbotron {
+   background: rgb(239, 252, 204); /* This is for ie8 and below */
+   background: rgba(239, 252, 204, 0.5); 
+   width: 100%;
+   height: auto;
+
+}
+
+
+.navbar{
+
+	background: #000000;
+	padding: 10px 0;
+	
+}
+.navbar-brand img{
+	width: 120px ;
+	height: 80px ;
+	margin-top: -30px;
+}
+
+.navbar-nav{
+float : right ;
+}
+
+.navbar-default .navbar-nav li a{
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav li a:hover{
+	background-color : 	#ADFF2F;
+	color: #000000;
+}
+
+#contactform{
+	padding-bottom: 40px;
+}
+
+footer{
+	width:100%;
+	background-color: #000;
+	padding:1% 1% 1% 1%;
+	color:#fff; 
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+
+.fa{
+
+	padding: 15px;
+	font-size: 25px;
+	color: #fff;
+}
+.fa:hover{
+	color: #D5D5D5;
+	text-decoration: none;
+
+}
+.icon{
+ max-width: 200px;
+}
